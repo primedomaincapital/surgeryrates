@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surgery Rates: The Same Procedure, Three Different Prices | surgeryrates.com</title>
+<meta name="description" content="Surgery Rates: The Same Procedure, Three Different Prices — aggregated public figures with sources, trend indicators, and methodology.">
+<link rel="canonical" href="https://surgeryrates.com/market-data">
+<meta property="og:title" content="Surgery Rates: The Same Procedure, Three Different Prices | surgeryrates.com">
+<meta property="og:description" content="Surgery Rates: The Same Procedure, Three Different Prices — aggregated public figures with sources, trend indicators, and methodology.">
+<meta property="og:url" content="https://surgeryrates.com/market-data">
+<meta property="og:type" content="website">
+<style>
+:root{--paper:#faf8f4;--paper2:#f1ece2;--teal:#0d4f4a;--teal2:#14655f;--coral:#e07856;--coral-d:#c05f3e;--ink:#1c2b2a;--mut:#6b7a78;--line:#e3dccb}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;background:rgba(250,248,244,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--teal);font-weight:600}
+.nav-cta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;background:var(--teal);color:#fff;padding:11px 24px;text-decoration:none;font-weight:500;transition:.25s;border-radius:2px}
+.nav-cta:hover{background:var(--coral-d)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--teal)}
+.hero-bg{position:absolute;inset:0;background:url('images/photo-39569318.jpg') center/cover;overflow:hidden}
+.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(250,248,244,1) 4%,rgba(250,248,244,.55) 38%,rgba(13,79,74,.42) 75%,rgba(13,79,74,.6))}
+.hero-inner{position:relative;z-index:2;padding:0 6vw 11vh;max-width:1200px}
+.eyebrow{display:inline-block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#fff;background:var(--coral);padding:8px 18px;margin-bottom:26px;border-radius:2px}
+h1{font-family:'Newsreader',serif;font-weight:300;font-size:clamp(50px,8vw,116px);line-height:1.04;letter-spacing:-.015em;color:#fff}
+h1 em{font-style:italic;color:#ffe3c9}
+.hero-stand{margin-top:26px;max-width:600px;font-size:18px;font-weight:300;color:#f3ede0}
+.hero-stand strong{font-weight:600;color:#fff}
+.hero-price{margin-top:36px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.price{font-family:'Newsreader',serif;font-size:clamp(32px,3.8vw,50px);color:#fff}
+.buy{display:inline-block;background:var(--coral);color:#fff;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding:17px 42px;text-decoration:none;border-radius:2px;transition:.25s}
+.buy:hover{background:var(--coral-d);transform:translateY(-2px)}
+section{padding:136px 6vw}
+.wrap{max-width:1120px;margin:0 auto}
+.sec-tag{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--coral-d);font-weight:600;margin-bottom:16px}
+h2{font-family:'Newsreader',serif;font-weight:300;font-size:clamp(34px,4.4vw,60px);line-height:1.14;letter-spacing:-.01em;max-width:800px}
+h2 em{font-style:italic;color:var(--teal2)}
+.lede{font-size:18.5px;font-weight:300;color:#3d4f4d;max-width:660px;margin-top:22px}
+.story{background:var(--paper2)}
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;margin-top:64px;align-items:start}
+.two p{color:#43534f;margin-bottom:18px;font-weight:300;font-size:16.5px}
+.two p strong{color:var(--ink);font-weight:500}
+.fact{border-left:3px solid var(--coral);padding:6px 0 6px 26px}
+.fact .big{font-family:'Newsreader',serif;font-size:clamp(40px,4.4vw,64px);color:var(--coral-d);line-height:1.05}
+.fact .cap{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-top:10px}
+.gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:72px}
+.gallery figure{overflow:hidden;border-radius:3px;position:relative;min-height:300px}
+.gallery img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.2,.6,.2,1)}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:linear-gradient(transparent,rgba(13,79,74,.85))}
+.compare{margin-top:76px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
+.compare-head{display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--teal);color:#fff;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.compare-head div{padding:18px 26px}
+.compare-row{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--line);font-size:15px}
+.compare-row div{padding:20px 26px}
+.compare-row .hl{font-family:'Newsreader',serif;font-size:22px;color:var(--coral-d)}
+.compare-note{padding:16px 26px;font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);font-style:italic}
+.who{background:var(--teal);color:#eef4f2}
+.who h2{color:#fff}.who h2 em{color:#ffd9b8}.who .lede{color:#c8d8d4}
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:64px}
+.who-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:4px;padding:36px 30px;transition:.3s}
+.who-card:hover{background:rgba(255,255,255,.1);transform:translateY(-5px)}
+.who-card .k{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--coral);margin-bottom:14px;font-weight:600}
+.who-card h3{font-family:'Newsreader',serif;font-size:24px;font-weight:400;margin-bottom:12px}
+.who-card p{font-size:14.5px;color:#c8d8d4;font-weight:300}
+.who-shots{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-top:64px}
+.who-shots figure{overflow:hidden;border-radius:3px;position:relative;min-height:320px}
+.who-shots img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform 1.2s}
+.who-shots figure:hover img{transform:scale(1.05)}
+.cta-sec{text-align:center;background:var(--paper2)}
+.cta-card{max-width:780px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:6px;padding:100px 6vw;box-shadow:0 30px 80px -30px rgba(13,79,74,.25)}
+.cta-card h2{margin:0 auto 18px}
+.cta-card p{color:#43534f;font-weight:300;margin-bottom:38px}
+.cta-card p a{color:var(--teal2);font-weight:500}
+.cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.ghost{border:1.5px solid var(--teal);color:var(--teal);font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding:16px 38px;text-decoration:none;border-radius:2px;transition:.25s}
+.ghost:hover{background:var(--teal);color:#fff}
+footer{padding:56px 6vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}
+footer a{color:var(--teal2);text-decoration:none;font-weight:500}
+@media(max-width:860px){.two,.gallery,.who-grid,.who-shots{grid-template-columns:1fr}.compare-head,.compare-row{grid-template-columns:1fr 1fr}section{padding:96px 6vw}}
+
+.data-wrap{max-width:900px;margin:0 auto;padding:24px 18px 40px}
+.data-wrap h1,.data-wrap h2{overflow-wrap:break-word;word-break:break-word}
+.updated{font-weight:700}
+table.data{width:100%;border-collapse:collapse;margin:20px 0;table-layout:fixed}
+table.data th,table.data td{border:1px solid #c9a86a;padding:10px 8px;text-align:left;vertical-align:top;overflow-wrap:break-word;word-break:break-word;font-size:15px}
+table.data td a{overflow-wrap:break-word;word-break:break-all}
+@media(max-width:480px){table.data,table.data tbody,table.data tr,table.data td{display:block;width:100%;box-sizing:border-box}table.data thead{display:none}table.data tr{margin-bottom:14px;border:1px solid #c9a86a}table.data td{border:none;border-bottom:1px solid #ddd}.data-wrap{padding:16px 12px}}
+.cta a{display:inline-block;padding:14px 22px;min-height:44px;line-height:1.4}
+
+/* Phase 1 assembly 2026-10-31 */
+.toc{border:1px solid currentColor;padding:18px 22px;margin:0 0 32px;max-width:720px}.toc-title{font-weight:600;margin-bottom:8px}.toc ul{margin:0;padding-left:20px}.toc li{margin:4px 0}.toc a{color:inherit}
+@media (max-width:900px){h1{font-size:clamp(44px,11vw,72px)!important}}
+@media (max-width:900px){.eyebrow{letter-spacing:.18em!important}}
+
+/* Phase 1 assembly 2026-10-31 — nav solid correction */
+@media (max-width:900px){nav{background:rgb(250,248,244)!important;backdrop-filter:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "surgeryrates.com — Surgery costs by procedure and setting",
+  "description": "Surgery Rates: The Same Procedure, Three Different Prices. Aggregated public estimates for information only.",
+  "temporalCoverage": "2025/2026",
+  "dateModified": "2026-10-25",
+  "creator": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "url": "https://surgeryrates.com/market-data",
+  "sameAs": [
+    "https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026",
+    "https://asset-insight.net/surgery-costs/total-out-of-pocket-cost-breakdown-for-knee-replacement-surgery-inpatient-vs-out",
+    "https://surgerycostguide.com/"
+  ]
+}
+</script>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1{font-size:clamp(30px,8.5vw,58px)!important;line-height:1.15!important}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-bg"><video autoplay muted loop playsinline poster="images/photo-39569318.jpg"><source src="video/hero.mp4" type="video/mp4"></source></video></div><div class="hero-veil"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Domain for sale</span>
+    <h1>What surgery<br><em>actually costs.</em></h1>
+    <p class="hero-stand">The same knee replacement: <strong>$18,000</strong> at the surgery center across town, <strong>$87,000</strong> at the hospital downtown. <strong>surgeryrates.com</strong> is the name for the reckoning.</p>
+    <div class="hero-price"><span class="price">$8,888</span><a class="buy" href="https://www.afternic.com/domain/surgeryrates.com">Buy Now</a></div>
+  </div>
+</header>
+<main class="data-wrap">
+<p class="updated">Last updated: October 25, 2026</p>
+<h1>Surgery Rates: The Same Procedure, Three Different Prices</h1>
+<p>Ask what a surgery costs and you will get three answers: the billed charge, the amount an insurer allows, and the cash price for someone paying directly. They can differ by tens of thousands of dollars for the same operation in the same city. This page keeps those three apart, and shows why the setting — hospital inpatient, hospital outpatient, or ambulatory surgery center — moves the number as much as the procedure itself.</p>
+<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li><a href="#figures">Figures</a></li><li><a href="#methodology">Methodology</a></li><li><a href="#what-the-numbers-mean">What the numbers mean</a></li><li><a href="#disclaimer">Disclaimer</a></li></ul></nav>
+<h2 id="figures">Figures</h2>
+<table class="data"><thead><tr><th>Figure</th><th>Current figure</th><th>Prior figure</th><th>Trend</th><th>Source</th></tr></thead><tbody>
+<tr><td>Total knee replacement — national average (published 2026 cost compilation)</td><td><strong>$45,000 (range $30,000–$70,000)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation aggregating CMS, Medicare and FAIR Health-derived data (secondary summary)</a></td></tr>
+<tr><td>Total knee replacement, ambulatory surgery center — average total allowed charge (FAIR Health benchmarks, as reported)</td><td><strong>$15,000–$28,000</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://asset-insight.net/surgery-costs/total-out-of-pocket-cost-breakdown-for-knee-replacement-surgery-inpatient-vs-out">FAIR Health cost benchmarks, as reported in knee-replacement cost analysis</a></td></tr>
+<tr><td>Total knee replacement, ASC vs hospital inpatient — allowed-charge difference</td><td><strong>40%–50% lower in an ASC</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://asset-insight.net/surgery-costs/total-out-of-pocket-cost-breakdown-for-knee-replacement-surgery-inpatient-vs-out">FAIR Health cost benchmarks, as reported in knee-replacement cost analysis</a></td></tr>
+<tr><td>Hip replacement — national average (published 2026 cost compilation)</td><td><strong>$32,000 (range $20,000–$60,000)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+<tr><td>Cataract surgery, one eye — national average (published 2026 cost compilation)</td><td><strong>$4,500 (range $3,000–$6,000)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+<tr><td>Appendectomy — national average (published 2026 cost compilation)</td><td><strong>$15,000 (range $7,000–$35,000)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+<tr><td>Laparoscopic gallbladder removal — national average (published 2026 cost compilation)</td><td><strong>$13,000 (range $6,000–$25,000)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+<tr><td>Hernia repair — national average (published 2026 cost compilation)</td><td><strong>$7,500 (range $4,000–$15,000)</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+<tr><td>Outpatient surgery centers vs hospital operating rooms, same procedure</td><td><strong>30%–60% lower at surgery centers</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation, facility-type comparison</a></td></tr>
+<tr><td>Chargemaster list prices vs negotiated insurance rates (published compilation)</td><td><strong>164% higher on average</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+<tr><td>Cash / self-pay prices vs negotiated insurance rates (published compilation)</td><td><strong>About 60% higher on average</strong></td><td>—</td><td>◆ Baseline (October 2026) — trend tracking starts with the next refresh</td><td><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation</a></td></tr>
+</tbody></table>
+<h2 id="methodology">Methodology</h2>
+<p>Included: published 2026 cost compilations that aggregate CMS, Medicare and FAIR Health-derived figures, and a knee-replacement analysis reporting FAIR Health allowed-charge benchmarks by setting. No proprietary FAIR Health table is reproduced verbatim; figures attributed to FAIR Health are summaries as reported in the linked analysis. Excluded: individual hospital chargemaster lines presented as market prices; surgeon-fee-only quotes that omit facility and anesthesia charges; and any procedure average without a stated range, since the range is where the useful information sits.</p>
+<h2 id="what-the-numbers-mean">What the numbers mean</h2>
+<p>Setting is the lever most patients never see. A knee replacement allowed at $15,000–$28,000 in an ambulatory surgery center against a $45,000 national average is not a different operation — it is the same operation without inpatient room charges and hospital overhead. The chargemaster comparison sharpens the point: list prices averaging 164% above negotiated rates mean the first number on a bill is the least informative one. For any elective procedure that can safely be done in an ambulatory setting, the facility question is worth asking before the surgeon question, because it moves the bill by more than most negotiations ever will.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>Figures on this page are aggregated public estimates for information only. They are not investment advice, legal advice, medical advice, or a quote for any specific case, procedure, or purchase. Individual prices vary by location, provider, severity, and contract. Verify any figure against its linked source before relying on it.</p>
+<div class="cta">
+<p><strong>surgeryrates.com is available for purchase at $8,888.</strong></p>
+<p><a href="https://www.afternic.com/domain/surgeryrates.com">Buy surgeryrates.com now — $8,888</a></p>
+<p>Questions: <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p>
+</div>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://coveredusa.org/en/blog/cost-of-medical-procedures-without-insurance-2026">Published 2026 cost compilation — average cost of common procedures</a></li>
+<li><a href="https://asset-insight.net/surgery-costs/total-out-of-pocket-cost-breakdown-for-knee-replacement-surgery-inpatient-vs-out">Knee replacement cost analysis — FAIR Health benchmarks by setting, as reported</a></li>
+<li><a href="https://surgerycostguide.com/">Surgery cost guide — 62+ procedures, CMS / Medicare / FAIR Health-derived aggregates</a></li>
+</ul>
+<h2>Changelog</h2>
+<ul><li>October 2026: Initial edition — published 2026 procedure averages with ranges, FAIR Health-based ASC knee-replacement benchmarks, facility-type savings, and chargemaster vs negotiated vs cash comparisons.</li></ul>
+</main>
+<footer>
+  <span>© 2026 Prime Domain Capital · surgeryrates.com</span>
+  <span>Secure transfer via <a href="https://www.afternic.com/domain/surgeryrates.com">Afternic</a> · <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></span>
+</footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script>
+<p class="back-home" style="display:block;text-align:center;padding:28px 16px;font-size:15px"><a href="https://surgeryrates.com/" style="color:inherit">&larr; Back to surgeryrates.com</a></p>
+</body>
+</html>
